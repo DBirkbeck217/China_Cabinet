@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap');
+
+
+body {
+    background-color: #f9a943;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Yeon Sung', cursive;
+    font-size: 48px;
+}
+
+#disk1:hover {
+    border-color: yellow;
+}
+
+#directions {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+#towers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 25px;
+}
+
+#tower1 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-color: aqua;
+    border-color: crimson;
+    border-style: dotted;
+    width: 300px;
+    height: 400px;
+    
+}
+
+#tower2 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-color: aqua;
+    border-color: crimson;
+    border-style: dotted;
+    width: 300px;
+    height: 400px;
+}
+
+#tower3 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-color: aqua;
+    border-color: crimson;
+    border-style: dotted;
+    width: 300px;
+    height: 400px;
+}
+
+#disk1 {
+    height: 50px;
+    width: 75px;
+    background-color: red;
+    border-radius: 4px;
+}
+
+#disk2 {
+    height: 50px;
+    width: 100px;
+    background-color: green;
+    border-radius: 4px;
+
+}
+
+#disk3 {
+    height: 50px;
+    width: 125px;
+    background-color: yellow;
+    border-radius: 4px;
+
+}
+
+#disk4 {
+    height: 50px;
+    width: 150px;
+    background-color: orange;
+    border-radius: 4px;
+}
