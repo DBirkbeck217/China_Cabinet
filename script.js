@@ -1,35 +1,40 @@
 let mode = "src"
 
-let tower1 = document.getElementById("tower1").addEventListener("click", moveDisk)
+let tower1 = document.getElementById("tower1")
+tower1.addEventListener("click", moveDisk)
+let tower2 = document.getElementById("tower2")
+tower2.addEventListener("click", moveDisk)
+let tower3 = document.getElementById("tower3")
+tower3.addEventListener("click", moveDisk)
 
-let tower2 = document.getElementById("tower2").addEventListener("click", moveDisk)
+let currentDisk
+let diskVal
 
-let tower3 = document.getElementById("tower3").addEventListener("click", moveDisk)
-
-let currentDisk = ""
-
-let disk1 = document.getElementById("disk1")
-let disk2 = document.getElementById("disk2")
-let disk3 = document.getElementById("disk3")
-let disk4 = document.getElementById("disk4")
-
-let disk1Val = 1
-let disk2Val = 2
-let disk3Val = 3
-let disk4Val = 4
-
-function moveDisk() {
+function moveDisk(event) {
+    console.log(mode)
     let currentTower = event.currentTarget
-    let diskCount = currentTower.childElementCount
 
     if (mode == "src") {
         currentDisk = currentTower.lastElementChild
+        diskVal = currentDisk.dataset.size
         mode = "dest"
     }
 
-    else {
-        currentTower.appendChild(currentDisk)
-        mode = "src"
+    else if (mode == "dest") {
+        if (currentTower.lastElementChild)
+        console.log(diskVal,currentTower.lastElementChild.dataset.size)
+
+        if (currentTower.lastElementChild && diskVal < currentTower.lastElementChild.dataset.size) {
+            return alert("No disk may be placed on top of a smaller disk! Try again")
+        } 
+        else {
+            currentTower.appendChild(currentDisk)
+            mode = "src"
+        }
+    }
+
+    if (tower3.childElementCount > 3) {
+        return alert("You Win!")
     }
 
 }
