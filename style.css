@@ -1,110 +1,125 @@
-@import url('https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap');
-
+@import url("https://fonts.googleapis.com/css?family=Bangers&display=swap");
 
 body {
-    background-color: #f9a943;
+  background-color: #f9a943;
 }
 
 h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    font-family: 'Yeon Sung', cursive;
-    font-size: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: "Bangers", cursive;
+  font-size: 64px;
 }
 
-/* #disk1:hover {
-    outline: black solid 2px;
-    outline-style: groove;
-} */
+.disk:hover {
+  border: thick solid white;
+}
 
 #directions {
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
 }
 
 #authors {
-    width: 300px;
-    height: 100px;
-    margin: auto;
+  width: 300px;
+  height: 100px;
+  margin: auto;
 }
 
 p {
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 #towers {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 25px;
 }
 
 #tower1 {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    background-color: aqua;
-    border-color: crimson;
-    border-style: dotted;
-    width: 300px;
-    height: 400px;
-    
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  background-color: aqua;
+  border-color: crimson;
+  border-style: dotted;
+  width: 300px;
+  height: 400px;
 }
 
 #tower2 {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    background-color: aqua;
-    border-color: crimson;
-    border-style: dotted;
-    width: 300px;
-    height: 400px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  background-color: aqua;
+  border-color: crimson;
+  border-style: dotted;
+  width: 300px;
+  height: 400px;
 }
 
 #tower3 {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    background-color: aqua;
-    border-color: crimson;
-    border-style: dotted;
-    width: 300px;
-    height: 400px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  background-color: aqua;
+  border-color: crimson;
+  border-style: dotted;
+  width: 300px;
+  height: 400px;
 }
 
 #disk1 {
-    height: 50px;
-    width: 75px;
-    background-color: red;
-    border-radius: 4px;
+  height: 50px;
+  width: 75px;
+  background-color: red;
+  border-radius: 4px;
 }
 
 #disk2 {
-    height: 50px;
-    width: 100px;
-    background-color: green;
-    border-radius: 4px;
-
+  height: 50px;
+  width: 100px;
+  background-color: green;
+  border-radius: 4px;
 }
 
 #disk3 {
-    height: 50px;
-    width: 125px;
-    background-color: yellow;
-    border-radius: 4px;
-
+  height: 50px;
+  width: 125px;
+  background-color: yellow;
+  border-radius: 4px;
 }
 
 #disk4 {
-    height: 50px;
-    width: 150px;
-    background-color: orange;
-    border-radius: 4px;
+  height: 50px;
+  width: 150px;
+  background-color: orange;
+  border-radius: 4px;
+}
+
+#disk5 {
+  height: 50px;
+  width: 175px;
+  background-color: purple;
+  border-radius: 4px;
+}
+
+#disk6 {
+  height: 50px;
+  width: 200px;
+  background-color: blue;
+  border-radius: 4px;
+}
+
+#napkin {
+  width: 225px;
+  height: 10px;
+  background-color: whitesmoke;
 }
