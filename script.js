@@ -9,6 +9,8 @@ tower3.addEventListener("click", moveDisk);
 
 let currentDisk;
 let diskVal;
+let count = 0;
+document.getElementById("count").innerHTML = "Moves: " + count;
 
 function moveDisk(event) {
   let currentTower = event.currentTarget;
@@ -17,7 +19,6 @@ function moveDisk(event) {
     currentDisk = currentTower.lastElementChild;
     diskVal = currentDisk.dataset.size;
     currentDisk.style.border = "thick solid #0000FF";
-
     mode = "dest";
   } else if (mode == "dest") {
     currentDisk.style.border = "none";
@@ -36,6 +37,8 @@ function moveDisk(event) {
       currentTower.appendChild(currentDisk);
       mode = "src";
     }
+    count++;
+    document.getElementById("count").innerHTML = "Moves: " + count;
   }
 
   if (tower1.childElementCount === 1) {

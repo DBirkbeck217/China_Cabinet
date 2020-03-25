@@ -123,3 +123,8 @@ p {
   height: 10px;
   background-color: whitesmoke;
 }
+
+#count {
+  text-align: center;
+  margin-top: 25px;
+}
